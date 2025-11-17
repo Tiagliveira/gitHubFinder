@@ -1,12 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createHashRouter, HashRouter } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import './index.css'
 
-import { RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
-
 import { Home } from './routes/Home.tsx'
 import Repos from './routes/Repos.tsx'
 
@@ -28,8 +26,6 @@ const routes = createHashRouter([
 ])
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
-      <RouterProvider router={routes} />
-    </HashRouter>
+    <RouterProvider router={routes} />
   </StrictMode>,
 )

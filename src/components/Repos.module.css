@@ -1,0 +1,114 @@
+.repos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reposVoltar {
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgb(0, 247, 255) 1%, rgb(42, 158, 194) 50%);
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.reposVoltar:hover {
+    background: transparent;
+    box-shadow: 3px 0 3px 5px rgba(0, 247, 255, 0.8);
+}
+
+.repos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.reposList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.reposObjectList {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 120px;
+    border: 2px groove #fffff0;
+    border-radius: 20px;
+    padding: 0 20px;
+
+}
+
+.reposObjectList:hover {
+    border: none;
+    box-shadow: 3px 3px 4px 4px rgba(0, 247, 255, 0.8);
+
+}
+
+.reposLink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.reposName {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.reposName strong {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: rgba(0, 247, 255, 0.8);
+}
+
+.reposStar {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.reposStar svg {
+    fill: #ff0;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.reposIcons {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.reposIcons span {
+    color: rgba(0, 247, 255, 0.5);
+    font-weight: 500;
+}
+
+.reposIcons svg {
+    fill: rgba(42, 158, 194, 0.9);
+
+}

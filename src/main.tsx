@@ -1,14 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createHashRouter, HashRouter } from 'react-router-dom';
+
 import './index.css'
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 
 import { Home } from './routes/Home.tsx'
 import Repos from './routes/Repos.tsx'
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -26,6 +28,8 @@ const routes = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={routes} />
+    <HashRouter>
+      <RouterProvider router={routes} />
+    </HashRouter>
   </StrictMode>,
 )

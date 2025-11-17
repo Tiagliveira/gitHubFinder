@@ -42,6 +42,6 @@ Deploy com GitHub Pages
 Este projeto está hospedado via GitHub Pages, permitindo que qualquer pessoa acesse a aplicação diretamente pelo navegador.
 
 Acesse aqui:
-https://github.com/Tiagliveira/gitHubFinder
+https://tiagliveira.github.io/gitHubFinder/
 
 Projeto desenvolvido por Tiago Oliveira
